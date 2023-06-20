@@ -1,0 +1,153 @@
+:root {
+    --text-color: #000;
+    --link-color: blue;
+    --secondary-color: beige;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #e4e4e4;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    color: var(--text-color);
+    background-color: white;
+    max-width: 58em;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow:0 0 10px 2px rgba(10, 10, 10, 0.2);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--secondary-color);
+}
+
+section {
+    padding: 5px 5%;
+}
+
+#profile {
+    text-align: center;
+    position: relative;
+}
+
+.profile-title h2 {
+    font-size: 1.75em;
+    font-weight: normal;
+    margin:20px 0 10px;
+}
+
+.profile-title h3 {
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0 0 10px;
+}
+
+ul.network-icons {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.network-icons li {
+    padding: 5px;
+}
+
+.avatar {
+    object-fit: cover;
+    width: 250;
+    height: 250;
+}
+
+.avatar-circle {
+    border-radius: 50%;
+}
+
+#statement {
+    text-align: justify;
+}
+
+@media (min-width: 45em) {
+    #statement {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+#news table {
+    width: 100%;
+}
+
+#news table .news-date {
+    width: 20%;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+#news table .news-text {
+    vertical-align: top;
+}
+
+#news table .tr {
+    padding: 0px 10px;
+}
+
+pubgroup {
+    display: block;
+}
+
+pubgroup + pubgroup {
+    margin-top: 1.5em;
+}
+
+pubgrouptitle {
+    display: block;
+    font-size: 1.2em;
+    border-bottom: 1px solid darkgray;
+}
+
+pub {
+    display: block;
+    margin-top: 20px;
+}
+
+pubtitle {
+    display: block;
+    font-weight: bold;
+}
+
+pubauthor {
+    display: block;
+}
+
+pubvenue {
+    display: block;
+    font-style: italic;
+}
+
+publinks {
+    display: block;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin-top: 20px;
+    font-size: small;
+    text-align: right;
+}

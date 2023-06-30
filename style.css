@@ -101,41 +101,30 @@ ul.network-icons {
     padding: 0px 10px;
 }
 
-pubgroup {
-    display: block;
-}
-
-pubgroup + pubgroup {
+.pubgroup + .pubgroup {
     margin-top: 1.5em;
 }
 
-pubgrouptitle {
-    display: block;
+.pubgrouptitle {
     font-size: 1.2em;
     border-bottom: 1px solid darkgray;
 }
 
-pub {
-    display: block;
+.pub {
     margin-top: 20px;
+    border-width: 10px;
 }
 
-pubtitle {
-    display: block;
+.pubtitle {
     font-weight: bold;
 }
 
-pubauthor {
-    display: block;
+.pubauthor a {
+    color: var(--text-color)
 }
 
-pubvenue {
-    display: block;
+.pubvenue {
     font-style: italic;
-}
-
-publinks {
-    display: block;
 }
 
 header {
